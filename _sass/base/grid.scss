@@ -1,0 +1,21 @@
+:root {
+  --gutter: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --gutter: 2rem;
+  }
+}
+
+@mixin grid() {
+  display: grid;
+  gap: var(--gutter);
+  grid-template-columns: repeat(12,minmax(0,1fr));
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+@mixin columns($num-of-cols) {
+  grid-column: span $num-of-cols/span $num-of-cols;
+}

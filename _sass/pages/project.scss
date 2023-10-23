@@ -1,0 +1,11 @@
+.project-page {
+  @include grid;
+}
+
+.project-page__images {
+  @include columns(6);
+}
+
+.project-page__text {
+  @include columns(6);
+}

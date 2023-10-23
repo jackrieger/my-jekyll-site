@@ -1,0 +1,12 @@
+.header {
+  @include font-md;
+  @include space-lg;
+}
+
+.nav {
+  @include grid;
+}
+
+.nav__link {
+  @include columns(6);
+}
